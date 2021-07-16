@@ -23,8 +23,8 @@ html{
 }
 
 .carousel-item{
-    background-color: rgb(206, 27, 167);
-    width: 200px;
+    background-color: rgb(0, 0, 0);
+    width: 160px;
     height: 250px;
     border-radius: 20px;
     overflow: hidden;
@@ -51,7 +51,7 @@ html{
 }
 
 .carousel-item__img{
-    width: 200px;
+    width: 160px;
     height: 250px;
     object-fit: cover;
 }
@@ -68,19 +68,19 @@ html{
     bottom: 0;
     left: 0;
     display: flex;
-    align-items: flex-end;
-    flex-direction: column;
+    flex-direction: column-reverse;
 }
 
 .carousel-item__details:hover {
     opacity: 1;
 }
 
-.carousel-item__details--icon {
-    width: 25px;
-    height: 25px;
+.carousel-item__details--icon{
+    width: 20px;
+    height: 20px;
 }
 
-.carousel-item__details--title, .carousel-item__details--subtitle  {
+.carousel-item__details--title, .carousel-item__details--subtitle{
     color: #ffffff;
+    display: inline-block;
 }
