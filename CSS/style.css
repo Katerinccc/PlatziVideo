@@ -10,7 +10,7 @@ html{
 }
 
 body{
-    background: linear-gradient(207.8deg, #BEAEE2 16.69%, #73d6c6 100%); 
+    background: linear-gradient(207.8deg, #845edd 16.69%, #73d6c6 100%); 
 }
 
 .header{
@@ -109,8 +109,7 @@ footer{
     height: 169px;
 }
 
-.login{
-    background-color: linear-gradient(207.8deg, #BEAEE2 16.69%, #73d6c6 100%);
+.login , .register{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,24 +118,30 @@ footer{
     min-height: calc(100vh - 200px);
 }
 
-.login__container{
+.login__container , .register__container{
     background-color: rgba(255, 255, 255, 0.1);
     border: 2px solid white;
     border-radius: 40px;
     color: white;
     padding: 60px 68px 40px;
-    min-height: 700px;
+    min-height: 650px;
     width: 400px;
-
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
-.login__container--form{
+.register__container h2{
+    font-size: 1.8rem;
+}
+
+.login__container--form , .register__container--form{
     display: flex;
     flex-direction: column;
     margin-top: 10px;
 }
 
-.login__container--form label{
+.login__container--form label , .register__container--form label{
     font-size: 1.4rem;
 }
 
@@ -171,8 +176,20 @@ footer{
 
 .login__container--register{
     font-size: 1.4rem;
-
 }
+
+.register__container--Inicia a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.register__container--Inicia a:hover{
+    text-decoration: underline;
+}
+
 
 .login__container--register a{
     font-size: 1.6rem;
@@ -185,7 +202,7 @@ footer{
     text-decoration: underline;
 }
 
-.input--login{
+.input--login , .register--login{
     background-color: transparent;
     border-top: 0px;
     border-right: 0px;
@@ -213,4 +230,24 @@ footer{
     font-family: 'Mulish', sans-serif;
     height: 50px;
     letter-spacing: 1px;
+    margin: 10px 0px;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+
+.footer a{
+    color:white;
+    cursor: pointer;
+    font-size: 1.4rem;
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    text-decoration: underline;
 }
