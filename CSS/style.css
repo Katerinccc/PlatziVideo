@@ -133,7 +133,7 @@ footer{
 .login__container--form{
     display: flex;
     flex-direction: column;
-
+    margin-top: 10px;
 }
 
 .login__container--form label{
@@ -165,7 +165,7 @@ footer{
 }
 
 .login__container--social-media > div > img{
-    width: 30px;
+    width: 25px;
     margin-right: 10px;
 }
 
@@ -183,4 +183,34 @@ footer{
 
 .login__container--register a:hover{
     text-decoration: underline;
+}
+
+.input--login{
+    background-color: transparent;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid white;
+    border-left: 0px;
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    outline: none;
+    height: 30px;
+}
+
+::placeholder{
+    color: white;
+}
+
+.button{
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 35px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-family: 'Mulish', sans-serif;
+    height: 50px;
+    letter-spacing: 1px;
 }
