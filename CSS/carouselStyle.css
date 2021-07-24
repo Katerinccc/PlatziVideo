@@ -20,6 +20,8 @@ html{
     white-space: nowrap;
     margin: 70px 0px;
     padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 .carousel-item{
