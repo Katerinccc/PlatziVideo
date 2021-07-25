@@ -11,6 +11,7 @@ html{
 
 body{
     background: linear-gradient(207.8deg, #845edd 10%, #73d6c6 100%); 
+    height: 100vh;
 }
 
 .header{
@@ -317,9 +318,77 @@ body{
     margin: 10px 0px;
 }
 
-.footer{
+.main__container{
     display: flex;
     align-items: center;
+    justify-content: center;
+    height: 700px;
+    color: white;
+}
+
+.main__error{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    min-height: calc(100vh - 200px);
+    font-size: 2.4rem;
+}
+
+.main__container--tittle{
+    width: 100%;
+    height: 300px;
+    float: left;
+    overflow: hidden;
+}
+
+.text-hinge {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 25rem;
+    text-transform: uppercase;
+}
+
+.animated {
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+@keyframes hinge {
+    0% {transform: rotate(0);transform-origin: top left;animation-timing-function: ease-in-out;}
+    20%, 60% {transform: rotate(80deg);transform-origin: top left;animation-timing-function: ease-in-out;}
+    40% {transform: rotate(60deg);transform-origin: top left;animation-timing-function: ease-in-out;}
+    80% {transform: rotate(60deg) translateY(0);transform-origin: top left;animation-timing-function: ease-in-out;}
+    100% {transform: translateY(700px);}
+}
+
+.hinge {
+margin: 20px;
+animation-name: hinge;
+}
+
+.main__container p{
+    margin-top: 30px;
+    font-weight: 700;
+}
+
+.main__error--img img{
+    height: 250px;
+    width: 250px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+    display: flex;
+    align-content: flex-end;
+}
+
+.footer{
+    display: flex;
+    align-items: flex-end;
     height: 100px;
     width: 100%;
 }
